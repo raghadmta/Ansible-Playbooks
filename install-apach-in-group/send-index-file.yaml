@@ -1,0 +1,11 @@
+- name: Copy index.html file and move to the ubuntu server
+  hosts:
+    - Ubuntuservers
+    - AmzLinuxservers
+  tasks:
+    - name: upload the index file
+      copy:
+        src: ./index.html
+        dest: /var/www/html
+        mode: 0755
+      become: true 

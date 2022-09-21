@@ -1,0 +1,4 @@
+---
+- import_playbook: install-apache-linux.yaml
+- import_playbook: install-apache-ubuntu.yaml
+- import_playbook: send-index-file.yaml

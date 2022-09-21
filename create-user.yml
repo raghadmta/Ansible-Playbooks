@@ -1,0 +1,13 @@
+- name: Create Users
+  hosts:
+    - AmzLinuxservers
+    - Ubuntuservers
+  vars_files:
+    - ./secret.yml
+  tasks:
+    - name: Create Secret User and Password
+      user:
+        name: "{{ username }}"
+        password: "{{ password }}"
+        state: present
+      become: true
