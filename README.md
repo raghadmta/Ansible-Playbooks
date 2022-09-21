@@ -6,3 +6,7 @@
  
 ### [create-user.yml](https://github.com/raghadmta/Ansible-Playbooks/blob/17e8a71dfeec8ea03155e93c139f302692a51a31/create-user.yml)
  The Playbook will create user using ansible-vault file.yml that have username and password stored in it.
+ 
+---
+###### This project was part of Saudi Digital Acadmy's ( SDA ) DevOps BootCamp 2022
+
