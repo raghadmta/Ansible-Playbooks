@@ -1,0 +1,13 @@
+---
+  - hosts: localhost
+    connection: local
+    become: true
+    tasks:
+      - name: ensure a container is running
+        docker_container:
+          name: sonarserver
+          state: started
+          image: sonarqube:8.2-community
+          pull: true
+          ports:
+            - "9000:9000"

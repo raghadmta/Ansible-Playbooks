@@ -1,0 +1,7 @@
+---
+- name: install the latest version of Apache Maven
+  hosts: localhost
+  connection: local
+  become: true
+  roles:
+    role: migibert.terraform

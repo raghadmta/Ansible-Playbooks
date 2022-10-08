@@ -1,0 +1,9 @@
+---
+ - hosts: localhost
+   tasks:
+   - name: Clone playbooks from github repo
+     git:
+       repo: https://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:x-oauth-basic@github.com/m-shaikh1/duihua-devops-project.git 
+       dest: /home/ubuntu/c
+       clone: yes
+       update: yes
